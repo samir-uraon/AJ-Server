@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.port 
 
 app.use(cors({
-  origin: `${process.env.host}:${process.env.port2}`,  // React frontend URL
+  origin: `${process.env.frontend_url}`,  // React frontend URL
   //credentials: true
 }));
 app.use(cookieParser());
@@ -69,7 +69,7 @@ app.get('/api/goldrates', async (req, res) => {
     };
     
     res.json(dummyData);
-				
+
   } catch (error) {
     console.error("Error fetching gold rates:", error);
     res.status(500).json({ error: 'Failed to fetch gold rates' });
