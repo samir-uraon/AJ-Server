@@ -52,8 +52,9 @@ const middleware = (req, res, next) => {
 };
 
 app.get("/home", middleware, (req, res) => {
-res.render("homepage.hbs", { goldRate });
+res.render("views/homepage.hbs", { goldRate });
 });
+
 app.post('/update', (req, res) => {
 	const { num } = req.body;
 	goldRate = num;
