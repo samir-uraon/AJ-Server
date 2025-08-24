@@ -1,0 +1,124 @@
+:root{
+    font-size: 70%;
+}
+body {
+     
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+			height: 100vh;	 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gold-rate-form {
+    
+text-align: center;
+& label{
+    font-size: 2rem;
+}
+& input{
+    padding: 1.2rem 1rem;
+}
+}
+
+.login-container {
+    /* Style the main card with elevated shadow and rounded corners */
+    background-color: #becbdd;
+    padding:0.5rem 2rem 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+
+    text-align: center;
+    border: 1px solid #e9ecef;
+}
+
+h2 {
+    /* Enhance the heading style with a modern, slightly darker color */
+    color: #212529;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.form-group {
+    /* Group labels and inputs for better structure and spacing */
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    /* Style the labels for clarity and readability */
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #495057;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    /* Apply a clean, consistent style to input fields */
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    /* Add a professional focus effect */
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+.login-btn {
+    /* Design a bold, accessible button with professional hover effects */
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    font-family: sans-serif;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+p {
+    /* Style the footer text with a softer color */
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+p a {
+    /* Style the link for better contrast and readability */
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
