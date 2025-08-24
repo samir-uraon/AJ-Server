@@ -52,7 +52,7 @@ const middleware = (req, res, next) => {
 };
 
 app.get("/home", middleware, (req, res) => {
-res.render("homepage", { goldRate });
+res.render("homepage.hbs", { goldRate });
 });
 app.post('/update', (req, res) => {
 	const { num } = req.body;
